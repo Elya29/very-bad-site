@@ -1,3 +1,4 @@
+// Very bad login
 const login = (event) => {
     const form = event.target.parentElement
     const idInput = form[0]
