@@ -1,10 +1,12 @@
-// Very bad blog
+const failDialog = document.getElementById('fail-dialog')
+const successDialog = document.getElementById('success-dialog')
+
 const hooray = () => {
-    window.alert('Bravo, vous avez trouvé le bon article. Le talent... ou un coup de chance ?')
+    successDialog.showModal();
 }
 
 const fail = () => {
-    window.alert(`Oups, ce n'est pas l'article demandé. Encore un petit effort, vous allez trouver !`)
+    failDialog.showModal();
 }
 
 const lastButton = document.getElementById('last-button')
