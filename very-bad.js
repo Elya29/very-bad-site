@@ -1,23 +1,15 @@
-const loginForm = document.getElementById('login-form')
-const registerForm = document.getElementById('register-form')
-loginLink = document.getElementById('login-link')
-registerLink = document.getElementById('register-link')
+const login = (event) => {
+    const form = event.target.parentElement
+    const idInput = form[0]
+    const passwordInput = form[1]
 
-const animateForm = () => {
-    loginForm.classList.toggle('hidden')
-    registerForm.classList.toggle('hidden')
-}
-
-registerLink.addEventListener('click', animateForm)
-loginLink.addEventListener('click', animateForm)
-
-const errorField = () => {
-    window.alert("le champ n'est pas valide, merci de modifier votre saisie")
-}
-
-const login = () => {
-    window.location.href = '/blog'
+    if (idInput.value !== "Specimen29" || passwordInput.value !== "SuPer@ccEssIblE!") {
+        window.alert("le champ n'est pas valide, merci de modifier votre saisie")
+    } else {
+        window.location.href='./very-bad-blog.html'
+    }
 }
 
 const loginButton = document.getElementById('login-button')
-loginButton.addEventListener("click", errorField)
+
+loginButton.addEventListener('click', (event) => login(event))

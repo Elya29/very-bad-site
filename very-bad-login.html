@@ -10,19 +10,12 @@
 </head>
 
 <body>
-	<div class="form">
-		<form id="register-form" class="hidden">
-			<input type="text" placeholder="nom" />
-			<input type="password" placeholder="mot de passe" />
-			<input type="text" placeholder="addresse email" />
-			<div class="button" onclick="window.location.href='http:www.test/blog'">Créer</div>
-			<p class="message">J'ai déjà un compte : <a href="#" id="register-link">Me connecter</a></p>
-		</form>
-		<form id="login-form">
+	<div class="form" id="login-form">
+		<form>
 			<input type="text" placeholder="identifiant" />
 			<input type="password" placeholder="mot de passe" />
-			<button id="login-button"></button>
-			<p class="message">Je viens pour la première fois ? <a href="#" id="login-link">Créer un compte</a></p>
+			<div id="login-button"></div>
+			<!-- <div id="login-button" onclick="window.location.href='./very-bad-blog.html'"></div> -->
 		</form>
 	</div>
 	<footer>
