@@ -3,8 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="initial-scale=1.0, user-scalable=yes">
-	<title>Very Bad Blog</title>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="very-bad-blog.css">
 	</li>
 </head>
@@ -12,7 +11,7 @@
 <body>
 	<div class="main">
 		<h1>Very bad blog</h1>
-		<ul class="cards">
+		<div class="cards">
 			<li class="cards_item">
 				<div class="card" tabindex="0">
 					<div class="card_image" tabindex="0"><img src="https://picsum.photos/500/300/?image=10" alt="image représentant un paysage de bord de mer avec une foret verdoyante au premier plan, sapins, océan, illustration de l'article 5 erreurs de débutant pour un site percutant"></div>
@@ -24,7 +23,7 @@
 				</div>
 			</li>
 			<li class="cards_item">
-				<div class="card" tabindex="0">
+				<div class="card" tabindex="0" aria-hidden="true">
 					<div class="card_image" tabindex="0"><img src="https://picsum.photos/500/300/?image=5" alt="Jeune développeur dynamique vu de dos en train de taper au clavier sur un laptop sur une table de pique-nique, avec un smartphone et un petit calepin noir à coté de lui."></div>
 					<div class="card_content">
 						<h3 class="card_title" tabindex="0">12 commandes bash a connaitre pour s'en sortir avec Linux</h3>
@@ -39,7 +38,7 @@
 					<div class="card_content">
 						<p class="card_title" tabindex="0">Les 6 tips de pro pour gagner en productivité avec VS Code</p>
 						<p class="card_text" tabindex="0">Voici les 6 astuces de pro qui vous aideront à devenir plus rapide et plus performant avec l'éditeur de code VS Code. On aurait aimé les connaitre en débutant !</p>
-						<button class="btn card_btn fail-button">Lire la suite</button>
+						<button class="btn card_btn fail-button" id="fail-button">Lire la suite</button>
 					</div>
 				</div>
 			</li>
@@ -49,7 +48,7 @@
 					<div class="card_content">
 						<h4 class="card_title" tabindex="1">L'IA qui promène ton chien vient de sortir</h4>
 						<p class="card_text" tabindex="0">Lassée de rester dans un bureau, l'IA passe la seconde et devient promeneuse de chien. Waf GPT, c'est son petit nom, est totalement autonome pour la promenade. A tester d'urgence !</p>
-						<button class="btn card_btn fail-button">Lire la suite</button>
+						<button class="btn card_btn fail-button" id="fail-button">Lire la suite</button>
 					</div>
 				</div>
 			</li>
@@ -65,7 +64,7 @@
 			</li>
 			<li class="cards_item">
 				<div class="card" tabindex="0">
-					<div class="card_image" tabindex="0"><img src="https://picsum.photos/500/300/?image=2" alt="table en exterieur avec un laptop ouvert, un café froid est posé dans sa coupelle à sa droite ainsi qu'une petite cuillère et un smartphone. A sa gauche,un calepin ouvert avec un stylo."></div>
+					<div class="card_image" tabindex="0"><img src="https://picsum.photos/500/300/?image=2"></div>
 					<div class="card_content">
 						<p class="card_title" tabindex="2">L'accessibilité, pour les nuls</p>
 						<p class="card_text" tabindex="0">Comment réaliser un site internet accessible pour qu'il soit naviguable par tous et toutes, qu'iel soit en situation de handicap ou non ? Dans cet article, nous allons vous montrer les bases de l'accessibilité...</p>
@@ -73,7 +72,7 @@
 					</div>
 				</div>
 			</li>
-		</ul>
+		</div>
 	</div>
 
 	<h3 class="made_by" tabindex="0">Made with ♡ for valid people</h3>
